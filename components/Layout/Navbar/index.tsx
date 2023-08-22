@@ -1,4 +1,3 @@
-// import Link from "next/link";
 "use client";
 
 import { useState } from "react";
@@ -6,7 +5,7 @@ import Buttonhamburger from "./ButtonHamburger";
 import ThemeButton from "./ThemeButton";
 import { navLinks } from "./navLinks";
 import { Link } from "react-scroll";
-import { NiloyLogo } from "@/components/icons/niloy-logo";
+import LogoNiloy from "./LogoNiloy";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -26,7 +25,7 @@ function Navbar() {
             duration={500}
             onClick={() => setToggle(false)}
           >
-            <NiloyLogo />
+            <LogoNiloy />
           </Link>
         </div>
 
@@ -36,19 +35,17 @@ function Navbar() {
           <Buttonhamburger toggle={toggle} setToggle={setToggle} />
 
           <nav className="hidden lg:block space-x-10">
-            {navLinks.map((navLink, i) => (
+            {navLinks.map((navLink) => (
               <Link
                 key={navLink.link}
-                className="cursor-pointer text-sm font-semibold"
-                activeClass="text-yellow-600 dark:text-yellow-400"
+                className="cursor-pointer text-[14px] font-semibold"
+                activeClass="text-yellow-700 dark:text-yellow-300"
                 to={navLink.link}
                 spy={true}
                 smooth={true}
                 // offset={-105}
                 offset={-80}
                 duration={500}
-                // onSetActive={() => setActiveBorder(i)}
-                // onSetInactive={() => setActiveBorder(false)}
               >
                 {navLink.name}
               </Link>
@@ -77,7 +74,7 @@ function Navbar() {
               <Link
                 key={navLink.link}
                 className="cursor-pointer text font-semibold py-3 pl-10"
-                activeClass="text-yellow-300 dark:text-yellow-400 bg-black/30 dark:bg-white/30 rounded-md"
+                activeClass="text-yellow-300 dark:text-yellow-300 bg-black/30 dark:bg-white/30 rounded-md"
                 to={navLink.link}
                 spy={true}
                 smooth={true}

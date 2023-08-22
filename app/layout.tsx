@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import ThemeWrapper from "@/components/Layout/ThemeWrapper";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
-import "./globals.css";
 import ToastNotification from "@/components/ToastNotification";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

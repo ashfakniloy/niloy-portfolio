@@ -16,9 +16,6 @@ const config: Config = {
         lg: "1070px",
         xl: "1070px",
         "2xl": "1070px",
-        // lg: "1200px",
-        // xl: "1200px",
-        // "2xl": "1200px",
       },
     },
     extend: {
@@ -31,18 +28,6 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
-        //   blob: {
-        //     "0%": {
-        //       borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%",
-        //     },
-        //     "50%": {
-        //       borderRadius: "30% 60% 70% 40% / 50% 60% 30% 60%",
-        //     },
-        //     "100%": {
-        //       borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%",
-        //     },
-        //   },
-        // },
         blob: {
           "0%, 100%": {
             borderRadius: "64% 36% 27% 73% / 55% 58% 42% 45%",
@@ -59,28 +44,8 @@ const config: Config = {
         },
       },
       animation: {
-        // "blob-animation": "blob 3s ease-in-out infinite",
         "blob-animation": "blob 15s linear infinite",
       },
-      // keyframes: {
-      //   blob: {
-      //     "0%, 100%": {
-      //       borderRadius: "50% 50% 50% 50% / 60% 40% 60% 40%",
-      //     },
-      //     "25%": {
-      //       borderRadius: "40% 60% 40% 60% / 50% 30% 70% 50%",
-      //     },
-      //     "50%": {
-      //       borderRadius: "60% 40% 60% 40% / 40% 60% 30% 70%",
-      //     },
-      //     "75%": {
-      //       borderRadius: "30% 70% 60% 40% / 70% 40% 60% 30%",
-      //     },
-      //   },
-      // },
-      // animation: {
-      //   "blob-animation": "blob 4s ease-in-out infinite",
-      // },
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NiloyImage from "@/public/images/niloy.jpg";
+import PotraitNiloy from "@/public/images/potrait-niloy.webp";
 import Highlight from "../Highlight";
 
 function About() {
@@ -18,11 +18,11 @@ function About() {
           Ashfak Ahmed Niloy
           {/* Lorem ipsum dolor */}
         </h1>
-        <h2 className="font-bold text-xl lg:text-2xl text-gray-700 dark:text-gray-300">
+        <h2 className="font-bold text-[22px] lg:text-2xl text-gray-700 dark:text-gray-300">
           I&apos;m a Web Developer
           {/* Lorem ipsum dolor sit amet */}
         </h2>
-        <p className="mt-3 lg:mt-5 text-gray-700 dark:text-gray-300 text-base">
+        <p className="mt-3 lg:mt-5 text-gray-900 dark:text-gray-100 text-base">
           My specialty is in <Highlight>frontend</Highlight> web development,
           where I utilize <Highlight>React</Highlight> and{" "}
           <Highlight>Next.js</Highlight> to construct intuitive interfaces.
@@ -34,14 +34,15 @@ function About() {
       </div>
 
       <div className="">
-        <div className="relative overflow-hidden h-[250px] w-[250px] lg:h-[400px] lg:w-[400px] animate-blob-animation border-[7px] lg:border-[10px] border-gray-300 dark:border-gray-500">
+        <div className="relative overflow-hidden h-[250px] w-[250px] lg:h-[400px] lg:w-[400px] animate-blob-animation rounded-full border-[7px] lg:border-[10px] border-gray-300 dark:border-gray-500">
           <Image
-            src={NiloyImage}
+            src={PotraitNiloy}
             placeholder="blur"
             alt="niloy potrait"
             fill
             priority
-            sizes="400px"
+            sizes="(max-width: 640px) 300px, 400px"
+            // sizes="400px"
             className="object-cover"
           />
         </div>

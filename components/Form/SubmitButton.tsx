@@ -18,6 +18,7 @@ function SubmitButton() {
   return (
     <button
       type="submit"
+      aria-label="send message"
       className="relative w-[165px] py-2.5 text-white dark:text-black rounded-md bg-gray-800 dark:bg-gray-100 font-bold disabled:opacity-50 disabled:cursor-not-allowed"
       disabled={pending}
     >

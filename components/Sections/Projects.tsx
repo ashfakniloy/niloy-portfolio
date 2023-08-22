@@ -31,24 +31,24 @@ function Projects() {
               target="_blank"
               className="w-full lg:w-auto"
             >
-              <div className="relative w-full h-[195px] lg:w-[480px] lg:h-[237px] border border-gray-200 dark:border-gray-800 flex-1 rounded-xl overflow-hidden">
+              <div className="lg:flex-1 relative mx-auto w-full max-w-[425px] h-[195px] lg:w-[480px] lg:max-w-[480px] lg:h-[237px] border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.name}
                   placeholder="blur"
                   fill
-                  sizes="500px"
+                  sizes="(max-width: 640px) 425px, 500px"
                   className="object-cover object-top hover:object-bottom"
                   style={{
                     transitionProperty: "all",
-                    transitionDuration: `${project.scrollDuration}s`,
                     transitionTimingFunction: "linear",
-                  }}
+                    transitionDuration: `${project.scrollDuration}s`,
+                  }} //dynamic arbitrary values doesn't work in tailwind, thats why using inline style
                 />
               </div>
             </Link>
 
-            <div className="flex-1">
+            <div className="lg:flex-1">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold">{project.name}</h3>
                 <div className="">{project.description}</div>
@@ -66,6 +66,7 @@ function Projects() {
                 <Link href={project.repo} target="_blank">
                   <button
                     type="button"
+                    aria-label="source code"
                     className="font-semibold border border-gray-300 dark:border-gray-700 flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-color duration-200"
                   >
                     <Github width={22} height={22} />
@@ -76,6 +77,7 @@ function Projects() {
                 <Link href={project.site} target="_blank">
                   <button
                     type="button"
+                    aria-label="live website"
                     className="font-semibold border border-gray-300 dark:border-gray-700 flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-color duration-200"
                   >
                     <ArrowUpRight />

@@ -61,7 +61,7 @@ function ThemeButton() {
       {currentTheme === "dark" ? (
         <button
           type="button"
-          aria-label="theme"
+          aria-label="toggle light mode"
           className="p-1 rounded-full hover:bg-gray-300 dark:hover:bg-gray-800"
           onClick={() => setTheme("light")}
         >
@@ -70,6 +70,7 @@ function ThemeButton() {
       ) : (
         <button
           type="button"
+          aria-label="toggle dark mode"
           className="p-1 rounded-full hover:bg-gray-300 dark:hover:bg-gray-800"
           onClick={() => setTheme("dark")}
         >

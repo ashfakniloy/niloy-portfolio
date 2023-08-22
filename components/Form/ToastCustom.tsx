@@ -1,8 +1,8 @@
+import Link from "next/link";
 import { toast } from "sonner";
 import CheckCircle from "../icons/check-circle";
 import XMark from "../icons/x-mark";
 import ExclamationCircle from "../icons/exclamation-circle";
-import Link from "next/link";
 
 export const SuccessToast = ({ t }: { t: string | number }) => {
   return (

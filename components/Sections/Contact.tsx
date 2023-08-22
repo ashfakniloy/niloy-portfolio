@@ -1,11 +1,11 @@
+import Link from "next/link";
+import Form from "../Form";
 import { Location } from "../icons/contact/location";
 import { Email } from "../icons/contact/email";
 import { Github } from "../icons/contact/github";
 import { Facebook } from "../icons/contact/facebook";
-import { Linkedin } from "../icons/contact/linkedin";
-import Link from "next/link";
+// import { Linkedin } from "../icons/contact/linkedin";
 // import ServerForm from "../ServerForm/ContactForm";
-import Form from "../Form";
 
 const socials = [
   {
@@ -43,7 +43,6 @@ function Contact() {
       <div className="mt-16 flex flex-col lg:flex-row gap-8 lg:gap-0 items-center justify-between">
         <div className="space-y-7">
           <div className="flex items-center gap-3 lg:gap-6">
-            {/* <div className="bg-[#99C84E]/70 h-[60px] w-[60px] rounded-full flex justify-center items-center"> */}
             <div className="bg-gray-300 dark:bg-gray-700 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
               <Location />
             </div>
@@ -55,7 +54,6 @@ function Contact() {
             </div>
           </div>
           <div className="flex items-center gap-3 lg:gap-6">
-            {/* <div className="bg-[#DC4233] h-[60px] w-[60px] rounded-full flex justify-center items-center"> */}
             <div className="bg-gray-300 dark:bg-gray-700 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
               <Email />
             </div>
@@ -72,7 +70,6 @@ function Contact() {
             </div>
           </div>
           <div className="lg:pt-3 flex items-center gap-5">
-            {/* <div className="bg-gray-700 h-[60px] w-[60px] rounded-full"></div> */}
             {socials.map((social) => (
               <Link key={social.name} href={social.link} target="_blank">
                 <button
@@ -90,31 +87,6 @@ function Contact() {
         <Form />
 
         {/* <ServerForm /> */}
-
-        {/* <div className="w-[550px] space-y-6">
-          <InputField label="Name" type="text" />
-          <InputField label="Email" type="email" />
-          
-          <div className="">
-            <label htmlFor="message" className="text-sm">
-              Message
-            </label>
-            <textarea
-              id="message"
-              className="mt-2 bg-transparent w-full outline-none p-2 border-2 border-gray-600 rounded-md focus:border-teal-500"
-              rows={3}
-            />
-
-            <div className="mt-2 flex justify-end">
-              <button
-                type="submit"
-                className="px-5 py-3 rounded-md bg-green-700 text-sm font-bold"
-              >
-                Send
-              </button>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
