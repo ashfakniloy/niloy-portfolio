@@ -61,6 +61,7 @@ import { Prisma } from "@/components/icons/skills/prisma";
 import { ReactIcon } from "@/components/icons/skills/react-icon";
 import { ReduxToolkit } from "@/components/icons/skills/reduxToolkit";
 import { Tailwind } from "@/components/icons/skills/tailwind";
+import TanstackQuery from "@/components/icons/skills/tanstack-query";
 import { TypeScript } from "@/components/icons/skills/typescript";
 
 export const skills = [
@@ -101,7 +102,11 @@ export const skills = [
     icon: <ReduxToolkit />,
   },
   {
-    name: "Git",
-    icon: <Git />,
+    name: "TanStack Query",
+    icon: <TanstackQuery />,
   },
+  // {
+  //   name: "Git",
+  //   icon: <Git />,
+  // },
 ];

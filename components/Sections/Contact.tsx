@@ -4,7 +4,7 @@ import { Location } from "../icons/contact/location";
 import { Email } from "../icons/contact/email";
 import { Github } from "../icons/contact/github";
 import { Facebook } from "../icons/contact/facebook";
-// import { Linkedin } from "../icons/contact/linkedin";
+import { Linkedin } from "../icons/contact/linkedin";
 // import ServerForm from "../ServerForm/ContactForm";
 
 const socials = [
@@ -18,11 +18,11 @@ const socials = [
     icon: <Facebook />,
     link: "https://www.facebook.com/ashfakniloy",
   },
-  // {
-  //   name: "Linkedin",
-  //   icon: <Linkedin />,
-  //   link: "https://www.linkedin.com/",
-  // },
+  {
+    name: "Linkedin",
+    icon: <Linkedin />,
+    link: "https://www.linkedin.com/in/ashfak-ahmed-niloy001",
+  },
 ];
 
 function Contact() {

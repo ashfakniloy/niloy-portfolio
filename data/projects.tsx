@@ -98,15 +98,15 @@ export const projects = [
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/ahm-blue-horizons",
     site: "https://ahm-blue-horizons.vercel.app",
-    scrollDuration: 5,
+    scrollDuration: 7,
   },
   {
     name: "Github Search",
     image: GithubSearch,
     description: (
       <p className="">
-        A simple app for finding github user profiles. The api is provided by
-        github.
+        A simple react app for searching github profiles and see profile
+        details. The api is provided by github.
       </p>
     ),
     technologies: ["React", "Redux Toolkit", "Axios", "Tailwind CSS"],

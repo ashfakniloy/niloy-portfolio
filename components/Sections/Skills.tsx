@@ -16,15 +16,16 @@ function Skills() {
         </p>
       </div>
 
-      <div className="mt-16 flex justify-center items-center flex-wrap gap-10 lg:gap-16 lg:mx-20">
+      <div className="mt-16 flex justify-center items-center flex-wrap gap-x-[14px] gap-y-10 lg:gap-16 lg:mx-20">
         {skills.map((skill) => (
-          <div key={skill.name} className="">
-            <div
-              className={`relative p-3 rounded-full w-[80px] h-[80px] lg:w-[100px] lg:h-[100px] flex justify-center items-center bg-white shadow-md dark:bg-gray-700`}
-            >
+          <div
+            key={skill.name}
+            className="h-[115px] w-[105px] lg:h-[133px] lg:w-[116px] flex flex-col justify-center items-center"
+          >
+            <div className="relative p-3 rounded-full w-[80px] h-[80px] lg:w-[100px] lg:h-[100px] flex justify-center items-center bg-white shadow-md dark:bg-gray-700">
               {skill.icon}
             </div>
-            <p className="mt-3 flex justify-center text-sm lg:text-base font-bold place-self-end">
+            <p className="mt-3 text-sm lg:text-base font-bold whitespace-nowrap">
               {skill.name}
             </p>
           </div>
