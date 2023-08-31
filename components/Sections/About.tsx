@@ -9,16 +9,16 @@ function About() {
       className="py-[80px] lg:py-[100px] flex flex-col lg:flex-row justify-center gap-10 lg:gap-0 lg:justify-between items-center min-h-[calc(100dvh-60px)] lg:min-h-[calc(100vh-60px)]"
     >
       <div className="lg:max-w-[530px]">
-        <p className="font-medium text-gray-700 dark:text-gray-300 text-sm lg:text-base mb-1 lg:mb-3">
+        <p className="font-montserrat font-medium text-gray-700 dark:text-gray-300 text-sm lg:text-base mb-1 lg:mb-3">
           Hi there, my name is
           {/* Lorem ipsum dolor sit */}
         </p>
 
-        <h1 className="font-bold text-3xl lg:text-5xl capitalize mb-1 lg:mb-2 text-gray-800 dark:text-gray-100">
+        <h1 className="font-montserrat font-bold text-3xl lg:text-[42px] capitalize mb-1 lg:mb-2 text-gray-800 dark:text-gray-100">
           Ashfak Ahmed Niloy
           {/* Lorem ipsum dolor */}
         </h1>
-        <h2 className="font-bold text-[22px] lg:text-2xl text-gray-700 dark:text-gray-300">
+        <h2 className="font-montserrat font-bold text-[22px] lg:text-2xl text-gray-700 dark:text-gray-300">
           I&apos;m a Web Developer
           {/* Lorem ipsum dolor sit amet */}
         </h2>
@@ -33,7 +33,7 @@ function About() {
         </p>
       </div>
 
-      <div className="">
+      <div>
         <div className="relative overflow-hidden h-[250px] w-[250px] lg:h-[400px] lg:w-[400px] animate-blob-animation rounded-full border-[7px] lg:border-[10px] border-gray-300 dark:border-gray-500">
           <Image
             src={PotraitNiloy}

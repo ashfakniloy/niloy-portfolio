@@ -11,22 +11,26 @@ export const projects = [
     name: "TechPost",
     image: TechPost,
     description: (
-      <p className="">
-        A fullstack multi author tech blog website with admin dashboard using
+      <p>
+        {/* A fullstack multi author tech blog website with admin dashboard using
         latest React Server Component feature of NextJS approuter. Users can
         register and write blog articles with rich text editor, upload images,
-        like, comment and replies to comments.
+        like, comment and replies to comments. */}
+        A full-stack multi-author tech blog website with an admin dashboard
+        using React Server Components in Next.js app router. Users can register
+        and write blog articles with rich text editor, upload images, like,
+        comment and replies to comments.
       </p>
     ),
     technologies: [
       "React",
-      "Next.js",
+      "Next.js (app router)",
       "TypeScript",
       "Tailwind CSS",
       "Prisma",
-      "Postgresql",
+      "PostgreSQL",
       "Cloudinary",
-      "Next Auth",
+      "NextAuth",
       "Tiptap",
       "React Hook Form",
       "Zod",
@@ -39,9 +43,7 @@ export const projects = [
     name: "Shannon IT",
     image: ShannonIt,
     description: (
-      <p className="">
-        An IT agency website with nice animation to showcase their services.
-      </p>
+      <p>An IT agency website with animations to showcase their services.</p>
     ),
     technologies: [
       "React",
@@ -58,9 +60,7 @@ export const projects = [
     name: "Safkon Industries",
     image: Safkon,
     description: (
-      <p className="">
-        A landing page website for a industry to showcase their services.
-      </p>
+      <p>A landing page website for an industry to showcase their services.</p>
     ),
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/safkon-frontend",
@@ -68,11 +68,9 @@ export const projects = [
     scrollDuration: 4,
   },
   {
-    name: "Web School",
+    name: "Web-School ERP",
     image: WebSchool,
-    description: (
-      <p className="">A landing page website for a school management system.</p>
-    ),
+    description: <p>A landing page website for a school management system.</p>,
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/school-management-website",
     site: "https://web-school-erp.vercel.app",
@@ -81,9 +79,7 @@ export const projects = [
   {
     name: "Top Client Offer",
     image: Topclientoffer,
-    description: (
-      <p className="">A landing page website for a CPA marketing agency.</p>
-    ),
+    description: <p>A landing page website for a CPA marketing agency.</p>,
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/topclientoffer",
     site: "https://topclientoffer.vercel.app",
@@ -92,9 +88,7 @@ export const projects = [
   {
     name: "AHM Blue Horizons",
     image: AHMBlueHorizons,
-    description: (
-      <p className="">A landing page website for an air travel agency.</p>
-    ),
+    description: <p>A landing page website for an air travel agency.</p>,
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/ahm-blue-horizons",
     site: "https://ahm-blue-horizons.vercel.app",
@@ -104,7 +98,7 @@ export const projects = [
     name: "Github Search",
     image: GithubSearch,
     description: (
-      <p className="">
+      <p>
         A simple react app for searching github profiles and see profile
         details. The api is provided by github.
       </p>

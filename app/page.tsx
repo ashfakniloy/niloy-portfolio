@@ -5,7 +5,7 @@ import Skills from "@/components/Sections/Skills";
 
 function HomePage() {
   return (
-    <main className="">
+    <main>
       <About />
       <Skills />
       <Projects />

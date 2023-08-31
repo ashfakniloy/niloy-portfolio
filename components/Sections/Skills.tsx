@@ -7,7 +7,9 @@ function Skills() {
       className="py-[80px] lg:py-[100px] min-h-[calc(100vh-60px)]"
     >
       <div className="text-center flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-bold tracking-wide">Skills</h2>
+        <h2 className="text-3xl lg:text-4xl font-montserrat font-bold tracking-wide">
+          Skills
+        </h2>
         <p className="mt-5 max-w-[500px]">
           My approach to web development revolves around embracing the latest
           technologies to deliver exceptional applications. Below, you&apos;ll

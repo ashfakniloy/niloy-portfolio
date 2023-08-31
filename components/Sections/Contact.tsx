@@ -32,7 +32,9 @@ function Contact() {
       className="py-[80px] lg:py-[100px] min-h-[calc(100vh-60px)]"
     >
       <div className="text-center flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-bold tracking-wide">Contact</h2>
+        <h2 className="text-3xl lg:text-4xl font-montserrat font-bold tracking-wide">
+          Contact
+        </h2>
         <p className="mt-5 max-w-[500px]">
           Let&apos;s connect and collaborate! If you&apos;re interested in
           working together or have any questions, feel free to reach out.
@@ -46,19 +48,19 @@ function Contact() {
             <div className="bg-gray-300 dark:bg-gray-700 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
               <Location />
             </div>
-            <div className="">
-              <h3 className="text-xl lg:text-[22px] font-bold opacity-50">
+            <div>
+              <h3 className="text-xl lg:text-[22px] font-montserrat font-bold opacity-50">
                 Location
               </h3>
-              <span className="">Dhaka, Bangladesh (Time zone: GMT +6)</span>
+              <span>Dhaka, Bangladesh (Time zone: GMT +6)</span>
             </div>
           </div>
           <div className="flex items-center gap-3 lg:gap-6">
             <div className="bg-gray-300 dark:bg-gray-700 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
               <Email />
             </div>
-            <div className="">
-              <h3 className="text-xl lg:text-[22px] font-bold opacity-50">
+            <div>
+              <h3 className="text-xl lg:text-[22px] font-montserrat font-bold opacity-50">
                 Email
               </h3>
               <Link

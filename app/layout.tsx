@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Montserrat, Open_Sans } from "next/font/google";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import ThemeWrapper from "@/components/Layout/ThemeWrapper";
@@ -7,7 +7,12 @@ import Footer from "@/components/Layout/Footer";
 import ToastNotification from "@/components/ToastNotification";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
 
 export const metadata: Metadata = {
   title: "Niloy | Web Developer",
@@ -23,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`bg-gray-50 text-black dark:bg-custom-gray dark:text-white ${inter.className}`}
+        className={`bg-gray-50 text-black dark:bg-custom-gray dark:text-white ${openSans.className} ${montserrat.variable}`}
       >
         <ThemeWrapper>
           <ToastNotification duration={5000} closeButton />

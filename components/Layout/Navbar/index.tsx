@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <header className="sticky top-0 z-20 ">
       <div className="h-[60px] px-2 flex justify-between items-center backdrop-blur-md bg-gray-50/50 dark:bg-custom-gray/30 ">
-        <div className="">
+        <div>
           <Link
             className="cursor-pointer"
             // activeClass="active"
@@ -34,7 +34,7 @@ function Navbar() {
 
           <Buttonhamburger toggle={toggle} setToggle={setToggle} />
 
-          <nav className="hidden lg:block space-x-10">
+          <nav className="hidden lg:block space-x-10 font-montserrat">
             {navLinks.map((navLink) => (
               <Link
                 key={navLink.link}
@@ -69,7 +69,7 @@ function Navbar() {
         }`}
       >
         <div className="overflow-hidden">
-          <nav className="py-2 flex flex-col gap-2">
+          <nav className="py-2 flex flex-col gap-2 font-montserrat">
             {navLinks.map((navLink, i) => (
               <Link
                 key={navLink.link}

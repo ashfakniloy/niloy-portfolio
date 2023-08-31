@@ -1,7 +1,7 @@
+import Link from "next/link";
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import { Github } from "../icons/contact/github";
-import Link from "next/link";
 import { ArrowUpRight } from "../icons/arrow-up-right";
 
 function Projects() {
@@ -11,7 +11,9 @@ function Projects() {
       className="py-[80px] lg:py-[100px] min-h-[calc(100vh-60px)]"
     >
       <div className="text-center flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-bold tracking-wide">Projects</h2>
+        <h2 className="text-3xl lg:text-4xl font-montserrat font-bold tracking-wide">
+          Projects
+        </h2>
         <p className="mt-5 max-w-[500px]">
           Explore a selection of my projects, where dynamic web applications and
           elegantly designed user interfaces take center stage. Each project
@@ -21,10 +23,10 @@ function Projects() {
       </div>
 
       <div className="mt-16 flex flex-col justify-center items-center gap-28 lg:gap-[120px]">
-        {projects.map((project, i) => (
+        {projects.map((project) => (
           <div
             key={project.name}
-            className="flex flex-col w-full lg:w-[1000px] lg:flex-row lg:even:flex-row-reverse items-center gap-5 lg:gap-10"
+            className="flex flex-col w-full lg:w-[1040px] lg:flex-row lg:even:flex-row-reverse items-center gap-5 lg:gap-10"
           >
             <Link
               href={project.site}
@@ -50,19 +52,21 @@ function Projects() {
 
             <div className="lg:flex-1">
               <div className="space-y-2">
-                <h3 className="text-2xl font-bold">{project.name}</h3>
-                <div className="">{project.description}</div>
-                <p className="">
+                <h3 className="text-2xl font-montserrat font-bold">
+                  {project.name}
+                </h3>
+                <div>{project.description}</div>
+                <p>
                   <span className="font-bold mr-2">Tech Stack:</span>
                   {project.technologies.map((technology, i) => (
-                    <span key={i} className="">
+                    <span key={i}>
                       {technology}
                       {i !== project.technologies.length - 1 && ","}{" "}
                     </span>
                   ))}
                 </p>
               </div>
-              <div className="mt-5 flex items-center gap-5">
+              <div className="mt-5 flex items-center gap-5 font-montserrat">
                 <Link href={project.repo} target="_blank">
                   <button
                     type="button"
@@ -70,7 +74,7 @@ function Projects() {
                     className="font-semibold border border-gray-300 dark:border-gray-700 flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-color duration-200"
                   >
                     <Github width={22} height={22} />
-                    <span className="">Code</span>
+                    <span>Code</span>
                   </button>
                 </Link>
 
@@ -81,7 +85,7 @@ function Projects() {
                     className="font-semibold border border-gray-300 dark:border-gray-700 flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-color duration-200"
                   >
                     <ArrowUpRight />
-                    <span className="">Live Website</span>
+                    <span>Live Website</span>
                   </button>
                 </Link>
               </div>

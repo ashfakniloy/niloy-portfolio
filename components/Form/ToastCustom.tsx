@@ -12,7 +12,7 @@ export const SuccessToast = ({ t }: { t: string | number }) => {
           <span className="mt-0.5 self-start">
             <CheckCircle />
           </span>
-          <div className="">
+          <div>
             <p>Your message has been submitted</p>
             <p className="mt-2 text-sm">
               I will get back to you as soon as possible.
@@ -39,7 +39,7 @@ export const ErrorToast = ({ t }: { t: string | number }) => {
           <span className="mt-0.5 self-start">
             <ExclamationCircle />
           </span>
-          <div className="">
+          <div>
             <p className="text-red-600 dark:text-red-400">
               Oops! something went wrong
             </p>
