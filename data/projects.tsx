@@ -8,18 +8,14 @@ import GithubSearch from "@/public/images/projects/github-search.webp";
 
 export const projects = [
   {
-    name: "TechPost",
+    name: "Techpost",
     image: TechPost,
     description: (
       <p>
-        {/* A fullstack multi author tech blog website with admin dashboard using
-        latest React Server Component feature of NextJS approuter. Users can
-        register and write blog articles with rich text editor, upload images,
-        like, comment and replies to comments. */}
-        A full-stack multi-author tech blog website with an admin dashboard
-        using React Server Components in Next.js app router. Users can register
-        and write blog articles with rich text editor, upload images, like,
-        comment and replies to comments.
+        A fullstack multi-author tech blog website with an admin dashboard using
+        React Server Components in Next.js app router. Users can register and
+        write blog articles with rich text editor, upload images, like, comment
+        and replies to comments.
       </p>
     ),
     technologies: [
@@ -37,7 +33,7 @@ export const projects = [
     ],
     repo: "https://github.com/ashfakniloy/techpost",
     site: "https://techpost.vercel.app",
-    scrollDuration: 2,
+    scrollDuration: 4,
   },
   {
     name: "Shannon IT",
@@ -53,7 +49,8 @@ export const projects = [
       "Formik",
     ],
     repo: "https://github.com/ashfakniloy/shannon-it",
-    site: "https://shannon-it.vercel.app",
+    // site: "https://shannon-it.vercel.app",
+    site: "https://www.shannonit.org",
     scrollDuration: 10,
   },
   {

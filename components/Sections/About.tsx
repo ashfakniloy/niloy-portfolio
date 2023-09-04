@@ -9,19 +9,17 @@ function About() {
       className="py-[80px] lg:py-[100px] flex flex-col lg:flex-row justify-center gap-10 lg:gap-0 lg:justify-between items-center min-h-[calc(100dvh-60px)] lg:min-h-[calc(100vh-60px)]"
     >
       <div className="lg:max-w-[530px]">
-        <p className="font-montserrat font-medium text-gray-700 dark:text-gray-300 text-sm lg:text-base mb-1 lg:mb-3">
-          Hi there, my name is
-          {/* Lorem ipsum dolor sit */}
-        </p>
-
-        <h1 className="font-montserrat font-bold text-3xl lg:text-[42px] capitalize mb-1 lg:mb-2 text-gray-800 dark:text-gray-100">
-          Ashfak Ahmed Niloy
-          {/* Lorem ipsum dolor */}
-        </h1>
-        <h2 className="font-montserrat font-bold text-[22px] lg:text-2xl text-gray-700 dark:text-gray-300">
-          I&apos;m a Web Developer
-          {/* Lorem ipsum dolor sit amet */}
-        </h2>
+        <div className="font-montserrat space-y-1 lg:space-y-2">
+          <p className="font-medium text-gray-700 dark:text-gray-300 text-sm lg:text-base">
+            Hi there, my name is
+          </p>
+          <h1 className="font-bold text-3xl lg:text-[42px] capitalize text-gray-800 dark:text-gray-100">
+            Ashfak Ahmed Niloy
+          </h1>
+          <h2 className="font-bold text-[22px] lg:text-[26px] text-gray-700 dark:text-gray-300">
+            I&apos;m a Web Developer
+          </h2>
+        </div>
         <p className="mt-3 lg:mt-5 text-gray-900 dark:text-gray-100 text-base">
           My specialty is in <Highlight>frontend</Highlight> web development,
           where I utilize <Highlight>React</Highlight> and{" "}
