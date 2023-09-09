@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { projects } from "@/data/projects";
-import { Github } from "../icons/contact/github";
+import { GithubButton } from "../icons/github-button";
 import { ArrowUpRight } from "../icons/arrow-up-right";
 
 function Projects() {
@@ -73,7 +73,7 @@ function Projects() {
                     aria-label="source code"
                     className="font-semibold border border-gray-300 dark:border-gray-700 flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-color duration-200"
                   >
-                    <Github width={22} height={22} />
+                    <GithubButton width={22} height={22} />
                     <span>Code</span>
                   </button>
                 </Link>
