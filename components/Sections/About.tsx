@@ -6,7 +6,7 @@ function About() {
   return (
     <section
       id="about"
-      className="py-[80px] lg:py-[100px] flex flex-col lg:flex-row justify-center gap-10 lg:gap-0 lg:justify-between items-center min-h-[calc(100dvh-60px)] lg:min-h-[calc(100vh-60px)]"
+      className="mt-[-60px] pt-[120px] pb-[80px] lg:py-[100px] flex flex-col lg:flex-row justify-center gap-8 lg:gap-0 lg:justify-between items-center min-h-[100dvh] lg:min-h-screen"
     >
       <div className="lg:max-w-[530px]">
         <div className="font-montserrat space-y-1 lg:space-y-2">
@@ -39,8 +39,7 @@ function About() {
             alt="niloy potrait"
             fill
             priority
-            sizes="(max-width: 640px) 300px, 400px"
-            // sizes="400px"
+            sizes="(max-width: 640px) 100vw, 400px"
             className="object-cover"
           />
         </div>

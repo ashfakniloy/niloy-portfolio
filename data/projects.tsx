@@ -1,15 +1,18 @@
-import TechPost from "@/public/images/projects/techpost.webp";
-import ShannonIt from "@/public/images/projects/shannon-it.webp";
-import Safkon from "@/public/images/projects/safkon.webp";
-import WebSchool from "@/public/images/projects/web-school.webp";
-import Topclientoffer from "@/public/images/projects/topclientoffer.webp";
-import AHMBlueHorizons from "@/public/images/projects/ahm-blue-horizons.webp";
-import GithubSearch from "@/public/images/projects/github-search.webp";
+// import TechPost from "@/public/images/projects/techpost.webp";
+// import ShannonIt from "@/public/images/projects/shannon-it.webp";
+// import Igniteweb from "@/public/images/projects/igniteweb.webp";
+// import Safkon from "@/public/images/projects/safkon.webp";
+// import WebSchool from "@/public/images/projects/web-school.webp";
+// import Topclientoffer from "@/public/images/projects/topclientoffer.webp";
+// import AHMBlueHorizons from "@/public/images/projects/ahm-blue-horizons.webp";
+// import GithubSearch from "@/public/images/projects/github-search.webp";
 
 export const projects = [
   {
     name: "Techpost",
-    image: TechPost,
+    // image: TechPost,
+    image: "/images/projects/techpost.webp",
+    blurImage: "/images/blur/techpost-blur.webp",
     description: (
       <p>
         A fullstack multi-author tech blog website with an admin dashboard using
@@ -37,7 +40,9 @@ export const projects = [
   },
   {
     name: "Shannon IT",
-    image: ShannonIt,
+    // image: ShannonIt,
+    image: "/images/projects/shannon-it.webp",
+    blurImage: "/images/blur/shannonit-blur.webp",
     description: (
       <p>An IT agency website with animations to showcase their services.</p>
     ),
@@ -54,8 +59,31 @@ export const projects = [
     scrollDuration: 10,
   },
   {
+    name: "Igniteweb",
+    // image: Igniteweb,
+    image: "/images/projects/igniteweb.webp",
+    blurImage: "/images/blur/igniteweb-blur.webp",
+    description: (
+      <p>A web design and development agency website with smooth animations.</p>
+    ),
+    technologies: [
+      "React",
+      "Next.js (app router)",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "React Hook Form",
+      "Zod",
+    ],
+    repo: "https://github.com/ashfakniloy/igniteweb",
+    site: "https://igniteweb.vercel.app",
+    scrollDuration: 10,
+  },
+  {
     name: "Safkon Industries",
-    image: Safkon,
+    // image: Safkon,
+    image: "/images/projects/safkon.webp",
+    blurImage: "/images/blur/safkon-blur.webp",
     description: (
       <p>A landing page website for an industry to showcase their services.</p>
     ),
@@ -66,7 +94,9 @@ export const projects = [
   },
   {
     name: "Web-School ERP",
-    image: WebSchool,
+    // image: WebSchool,
+    image: "/images/projects/web-school.webp",
+    blurImage: "/images/blur/webschool-blur.webp",
     description: <p>A landing page website for a school management system.</p>,
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/school-management-website",
@@ -75,7 +105,9 @@ export const projects = [
   },
   {
     name: "Top Client Offer",
-    image: Topclientoffer,
+    // image: Topclientoffer,
+    image: "/images/projects/topclientoffer.webp",
+    blurImage: "/images/blur/topclient-blur.webp",
     description: <p>A landing page website for a CPA marketing agency.</p>,
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/topclientoffer",
@@ -84,7 +116,9 @@ export const projects = [
   },
   {
     name: "AHM Blue Horizons",
-    image: AHMBlueHorizons,
+    // image: AHMBlueHorizons,
+    image: "/images/projects/ahm-blue-horizons.webp",
+    blurImage: "/images/blur/ahm-blur.webp",
     description: <p>A landing page website for an air travel agency.</p>,
     technologies: ["React", "Next.js", "Tailwind CSS", "Formik"],
     repo: "https://github.com/ashfakniloy/ahm-blue-horizons",
@@ -93,7 +127,9 @@ export const projects = [
   },
   {
     name: "Github Search",
-    image: GithubSearch,
+    // image: GithubSearch,
+    image: "/images/projects/github-search.webp",
+    blurImage: "/images/blur/githubsearch-blur.webp",
     description: (
       <p>
         A simple react app for searching github profiles and see profile

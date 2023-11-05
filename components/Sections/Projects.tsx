@@ -6,10 +6,7 @@ import { ArrowUpRight } from "../icons/arrow-up-right";
 
 function Projects() {
   return (
-    <section
-      id="projects"
-      className="py-[80px] lg:py-[100px] min-h-[calc(100vh-60px)]"
-    >
+    <section id="projects" className="py-[80px] lg:py-[100px]">
       <div className="text-center flex flex-col justify-center items-center">
         <h2 className="text-3xl lg:text-4xl font-montserrat font-bold tracking-wide">
           Projects
@@ -22,24 +19,25 @@ function Projects() {
         </p>
       </div>
 
-      <div className="mt-16 flex flex-col justify-center items-center gap-28 lg:gap-[120px]">
+      <div className="mt-16 space-y-28 lg:space-y-[120px]">
         {projects.map((project) => (
           <div
             key={project.name}
-            className="flex flex-col w-full lg:w-[1040px] lg:flex-row lg:even:flex-row-reverse items-center gap-5 lg:gap-10"
+            className="w-full flex flex-col lg:flex-row lg:even:flex-row-reverse items-center gap-5 lg:gap-10"
           >
             <Link
               href={project.site}
               target="_blank"
               className="w-full lg:w-auto"
             >
-              <div className="lg:flex-1 relative mx-auto w-full max-w-[425px] h-[195px] lg:w-[480px] lg:max-w-[480px] lg:h-[237px] border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+              <div className="relative w-full lg:w-[480px] max-w-[425px] lg:max-w-[480px] h-[179px] lg:h-[237px] border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.name}
-                  placeholder="blur"
                   fill
-                  sizes="(max-width: 640px) 425px, 500px"
+                  placeholder="blur"
+                  blurDataURL={project.blurImage}
+                  sizes="(max-width: 640px) 425px, 100vw"
                   className="object-cover object-top hover:object-bottom"
                   style={{
                     transitionProperty: "all",
@@ -50,7 +48,7 @@ function Projects() {
               </div>
             </Link>
 
-            <div className="lg:flex-1">
+            <div className="lg:w-full">
               <div className="space-y-2">
                 <h3 className="text-2xl font-montserrat font-bold">
                   {project.name}

@@ -27,10 +27,7 @@ const socials = [
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="py-[80px] lg:py-[100px] min-h-[calc(100vh-60px)]"
-    >
+    <section id="contact" className="py-[80px] lg:py-[100px]">
       <div className="text-center flex flex-col justify-center items-center">
         <h2 className="text-3xl lg:text-4xl font-montserrat font-bold tracking-wide">
           Contact

@@ -5,12 +5,12 @@ import Skills from "@/components/Sections/Skills";
 
 function HomePage() {
   return (
-    <main>
+    <>
       <About />
       <Skills />
       <Projects />
       <Contact />
-    </main>
+    </>
   );
 }
 
