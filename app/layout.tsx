@@ -33,13 +33,11 @@ export default function RootLayout({
         <ThemeWrapper>
           <ToastNotification duration={5000} closeButton />
 
-          <div className="container">
-            <Navbar />
+          <Navbar />
 
-            <main>{children}</main>
+          <main className="container">{children}</main>
 
-            <Footer />
-          </div>
+          <Footer />
         </ThemeWrapper>
 
         <Analytics />
