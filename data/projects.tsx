@@ -59,7 +59,7 @@ export const projects = [
     scrollDuration: 10,
   },
   {
-    name: "Igniteweb",
+    name: "Ignite Web",
     // image: Igniteweb,
     image: "/images/projects/igniteweb.webp",
     blurImage: "/images/blur/igniteweb-blur.webp",
