@@ -15,7 +15,6 @@ function Navbar() {
 
   return (
     <header
-      data-toggle={toggle}
       className={`sticky top-0 z-20 w-full transition-colors duration-300 lg:transition-none backdrop-blur-md ${
         toggle
           ? "bg-white dark:bg-black"
