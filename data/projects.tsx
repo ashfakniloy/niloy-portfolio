@@ -54,8 +54,8 @@ export const projects = [
       "Formik",
     ],
     repo: "https://github.com/ashfakniloy/shannon-it",
-    site: "https://shannon-it.vercel.app",
-    // site: "https://www.shannonit.org",
+    site: "https://www.shannonit.org",
+    // site: "https://shannon-it.vercel.app",
     scrollDuration: 10,
   },
   {
