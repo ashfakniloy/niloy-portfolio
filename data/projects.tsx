@@ -9,6 +9,34 @@
 
 export const projects = [
   {
+    name: "Contentboard",
+    image: "/images/projects/contentboard.webp",
+    blurImage: "/images/blur/contentboard-blur.webp",
+    description: (
+      <p>
+        A fullstack blog and contact management dashboard for websites. Website
+        owners can write blog articles and manage contact section of their
+        websites.
+      </p>
+    ),
+    technologies: [
+      "React",
+      "Next.js (app router)",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "MongoDB",
+      "Cloudinary",
+      "NextAuth",
+      "Tiptap",
+      "React Hook Form",
+      "Zod",
+    ],
+    repo: "https://github.com/ashfakniloy/contentboard",
+    site: "https://contentboard.vercel.app",
+    scrollDuration: 0.3,
+  },
+  {
     name: "Techpost",
     // image: TechPost,
     image: "/images/projects/techpost.webp",
@@ -54,8 +82,8 @@ export const projects = [
       "Formik",
     ],
     repo: "https://github.com/ashfakniloy/shannon-it",
-    site: "https://www.shannonit.org",
-    // site: "https://shannon-it.vercel.app",
+    // site: "https://www.shannonit.org",
+    site: "https://shannon-it.vercel.app",
     scrollDuration: 10,
   },
   {

@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`bg-gray-50 text-black dark:bg-custom-gray dark:text-white ${openSans.className} ${montserrat.variable}`}
+        // className={`bg-gray-50 text-black dark:bg-custom-gray dark:text-white ${openSans.className} ${montserrat.variable} bg-[radial-gradient(circle_at_17px_17px,#DFE6EF_1px,_transparent_0)] dark:bg-[radial-gradient(circle_at_17px_17px,#1C2026_1px,_transparent_0)] bg-[size:18px_18px] bg-repeat`}
       >
         <ThemeWrapper>
           <ToastNotification duration={5000} closeButton />
