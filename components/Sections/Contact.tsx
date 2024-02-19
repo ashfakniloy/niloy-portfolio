@@ -42,7 +42,7 @@ function Contact() {
       <div className="mt-16 flex flex-col lg:flex-row gap-8 lg:gap-0 items-center justify-between">
         <div className="space-y-7">
           <div className="flex items-center gap-3 lg:gap-6">
-            <div className="bg-gray-300 dark:bg-gray-700 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
+            <div className="bg-stone-300 dark:bg-stone-800 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
               <Location />
             </div>
             <div>
@@ -53,7 +53,7 @@ function Contact() {
             </div>
           </div>
           <div className="flex items-center gap-3 lg:gap-6">
-            <div className="bg-gray-300 dark:bg-gray-700 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
+            <div className="bg-stone-300 dark:bg-stone-800 h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] rounded-full flex justify-center items-center">
               <Email />
             </div>
             <div>

@@ -21,10 +21,10 @@ function About() {
           </h2>
         </div>
         <p className="mt-3 lg:mt-5 text-gray-900 dark:text-gray-100 text-base">
-          My specialty is in <Highlight>frontend</Highlight> web development,
+          My specialty is in <Highlight>front-end</Highlight> web development,
           where I utilize <Highlight>React</Highlight> and{" "}
           <Highlight>Next.js</Highlight> to construct intuitive interfaces.
-          I&apos;m also experienced in <Highlight>fullstack</Highlight> web
+          I&apos;m also experienced in <Highlight>full-stack</Highlight> web
           development with <Highlight>Next.js</Highlight>. I like to use{" "}
           <Highlight>TypeScript</Highlight> and{" "}
           <Highlight>Tailwind CSS</Highlight> for my projects.
@@ -32,7 +32,7 @@ function About() {
       </div>
 
       <div>
-        <div className="relative overflow-hidden h-[250px] w-[250px] lg:h-[400px] lg:w-[400px] animate-blob-animation rounded-full border-[7px] lg:border-[10px] border-gray-300 dark:border-gray-500">
+        <div className="relative overflow-hidden h-[250px] w-[250px] lg:h-[400px] lg:w-[400px] animate-blob-animation rounded-full border-[7px] lg:border-[10px] border-gray-200 dark:border-stone-800">
           <Image
             src={PotraitNiloy}
             placeholder="blur"

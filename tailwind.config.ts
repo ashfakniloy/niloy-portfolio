@@ -23,7 +23,8 @@ const config: Config = {
         montserrat: ["var(--font-montserrat)"],
       },
       colors: {
-        "custom-gray": "#0D1117",
+        // "custom-gray": "#0D1117",
+        "custom-gray": "#0A0A0A",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

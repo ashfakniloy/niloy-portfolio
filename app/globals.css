@@ -7,4 +7,8 @@
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth !important;
   }
+
+  .texture-dot {
+    @apply bg-fixed bg-[radial-gradient(circle_at_17px_17px,#DFE6EF_1px,_transparent_0)] dark:bg-[radial-gradient(circle_at_17px_17px,#111827_1px,_transparent_0)] bg-[size:18px_18px] bg-repeat;
+  }
 }

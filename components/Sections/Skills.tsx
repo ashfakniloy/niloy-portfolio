@@ -11,10 +11,13 @@ function Skills() {
           Skills
         </h2>
         <p className="mt-5 max-w-[500px]">
-          My approach to web development revolves around embracing the latest
+          My approach to web development is all about using the latest
+          technologies to make awesome web experiences. Here are some of my core
+          skills.
+          {/* My approach to web development revolves around embracing the latest
           technologies to deliver exceptional applications. Below, you&apos;ll
           find a glimpse of my core skills, reflecting my commitment to building
-          with innovation.
+          with innovation. */}
         </p>
       </div>
 
@@ -24,7 +27,7 @@ function Skills() {
             key={skill.name}
             className="h-[115px] w-[105px] lg:h-[133px] lg:w-[116px] flex flex-col justify-center items-center"
           >
-            <div className="relative p-3 rounded-full w-[80px] h-[80px] lg:w-[100px] lg:h-[100px] flex justify-center items-center bg-white shadow-md dark:bg-gray-700">
+            <div className="relative p-3 rounded-full w-[80px] h-[80px] lg:w-[100px] lg:h-[100px] flex justify-center items-center shadow-md bg-white dark:bg-stone-800">
               {skill.icon}
             </div>
             <p className="mt-3 text-sm lg:text-base font-bold whitespace-nowrap">

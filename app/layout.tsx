@@ -1,5 +1,5 @@
-import { Montserrat, Open_Sans } from "next/font/google";
 import type { Metadata } from "next";
+import { Montserrat, Open_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import ThemeWrapper from "@/components/Layout/ThemeWrapper";
 import Navbar from "@/components/Layout/Navbar";
@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Niloy | Web Developer",
   description:
-    "I'm passionate about frontend web development with React and Next.js. I'm also experienced in fullstack development using Next.js. Explore my projects.",
+    "I'm passionate about front-end web development with React and Next.js. I'm also experienced in full-stack development using Next.js. Explore my projects.",
 };
 
 export default function RootLayout({
@@ -28,8 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`bg-gray-50 text-black dark:bg-custom-gray dark:text-white ${openSans.className} ${montserrat.variable}`}
-        // className={`bg-gray-50 text-black dark:bg-custom-gray dark:text-white ${openSans.className} ${montserrat.variable} bg-[radial-gradient(circle_at_17px_17px,#DFE6EF_1px,_transparent_0)] dark:bg-[radial-gradient(circle_at_17px_17px,#1C2026_1px,_transparent_0)] bg-[size:18px_18px] bg-repeat`}
+        className={`bg-gray-50 text-black dark:bg-custom-gray dark:text-white texture-dot ${openSans.className} ${montserrat.variable}`}
       >
         <ThemeWrapper>
           <ToastNotification duration={5000} closeButton />

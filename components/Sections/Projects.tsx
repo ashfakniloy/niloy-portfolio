@@ -12,10 +12,13 @@ function Projects() {
           Projects
         </h2>
         <p className="mt-5 max-w-[500px]">
-          Explore a selection of my projects, where dynamic web applications and
+          Check out some of my projects developed with cutting-edge web
+          technologies, demonstrating my dedication to staying ahead in the web
+          development industry.
+          {/* Explore a selection of my projects, where dynamic web applications and
           elegantly designed user interfaces take center stage. Each project
           reflects my dedication to crafting seamless and captivating digital
-          experiences.
+          experiences. */}
         </p>
       </div>
 
@@ -30,7 +33,7 @@ function Projects() {
               target="_blank"
               className="w-full lg:w-auto"
             >
-              <div className="relative w-full lg:w-[480px] max-w-[425px] lg:max-w-[480px] h-[179px] lg:h-[237px] border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+              <div className="relative w-full lg:w-[480px] max-w-[425px] lg:max-w-[480px] h-[179px] lg:h-[237px] border border-gray-200 dark:border-stone-900 rounded-xl overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.name}
@@ -49,29 +52,29 @@ function Projects() {
             </Link>
 
             <div className="lg:w-full">
-              <div className="space-y-2">
+              <div className="">
                 <h3 className="text-2xl font-montserrat font-bold">
                   {project.name}
                 </h3>
-                <div>{project.description}</div>
-                <p>
+                <div className="mt-2">{project.description}</div>
+                <p className="mt-3 leading-normal text-sm text-gray-800 dark:text-gray-200">
                   <span className="font-bold mr-2">Tech Stack:</span>
                   {project.technologies.map((technology, i) => (
-                    <span key={i}>
+                    <span key={i} className="font-medium">
                       {technology}
                       {i !== project.technologies.length - 1 && ","}{" "}
                     </span>
                   ))}
                 </p>
               </div>
-              <div className="mt-5 flex items-center gap-5 font-montserrat">
+              <div className="mt-4 flex items-center gap-5 font-montserrat">
                 <Link href={project.repo} target="_blank">
                   <button
                     type="button"
                     aria-label="source code"
-                    className="font-semibold border border-gray-300 dark:border-gray-700 flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-color duration-200"
+                    className="flex items-center gap-2 px-4 py-2 rounded-md font-semibold text-sm border bg-gray-50 dark:bg-custom-gray border-gray-200 dark:border-stone-800 hover:bg-gray-200 dark:hover:bg-stone-800 transition-color duration-200"
                   >
-                    <GithubButton width={22} height={22} />
+                    <GithubButton width={20} height={20} />
                     <span>Code</span>
                   </button>
                 </Link>
@@ -80,7 +83,7 @@ function Projects() {
                   <button
                     type="button"
                     aria-label="live website"
-                    className="font-semibold border border-gray-300 dark:border-gray-700 flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-color duration-200"
+                    className="flex items-center gap-2 px-4 py-2 rounded-md font-semibold text-sm border bg-gray-50 dark:bg-custom-gray border-gray-200 dark:border-stone-800 hover:bg-gray-200 dark:hover:bg-stone-800 transition-color duration-200"
                   >
                     <ArrowUpRight />
                     <span>Live Website</span>

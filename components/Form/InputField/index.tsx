@@ -24,7 +24,7 @@ function InputField({
         // placeholder={label}
         required={required}
         {...props}
-        className="mt-2 w-full outline-none p-2 bg-gray-200 dark:bg-gray-800 border-2 border-transparent rounded-md focus:border-cyan-300 dark:focus:border-cyan-800"
+        className="mt-2 w-full outline-none p-2 bg-stone-200 dark:bg-stone-900 border-2 border-transparent rounded-md focus:border-stone-400 dark:focus:border-stone-700"
       />
 
       {errorMessages && (
