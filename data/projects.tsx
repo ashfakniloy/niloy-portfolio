@@ -17,7 +17,7 @@ export const projects = [
         A full-stack blog and contact management dashboard for websites, built
         with Next.js app router. This project allows website owners to write
         blog articles for their websites and manage the contact section via
-        APIs.
+        provided APIs.
       </p>
     ),
     technologies: [
