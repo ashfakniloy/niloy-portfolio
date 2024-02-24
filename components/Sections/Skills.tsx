@@ -14,10 +14,6 @@ function Skills() {
           My approach to web development is all about using the latest
           technologies to make awesome web experiences. Here are some of my core
           skills.
-          {/* My approach to web development revolves around embracing the latest
-          technologies to deliver exceptional applications. Below, you&apos;ll
-          find a glimpse of my core skills, reflecting my commitment to building
-          with innovation. */}
         </p>
       </div>
 

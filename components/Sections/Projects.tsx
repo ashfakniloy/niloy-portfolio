@@ -15,10 +15,6 @@ function Projects() {
           Check out some of my projects developed with cutting-edge web
           technologies, demonstrating my dedication to staying ahead in the web
           development industry.
-          {/* Explore a selection of my projects, where dynamic web applications and
-          elegantly designed user interfaces take center stage. Each project
-          reflects my dedication to crafting seamless and captivating digital
-          experiences. */}
         </p>
       </div>
 

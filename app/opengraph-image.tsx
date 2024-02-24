@@ -10,15 +10,12 @@ export const size = {
   height: 630,
 };
 
-// export const contentType = "image/png";
 export const contentType = "image/jpg";
 
 const BASE_URL =
   process.env.NODE_ENV !== "development"
     ? "https://niloy.vercel.app"
     : "http://localhost:3000";
-
-// const BASE_URL = "http://localhost:3000";
 
 const skills = [
   {
